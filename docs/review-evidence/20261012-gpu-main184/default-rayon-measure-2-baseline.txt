@@ -1,0 +1,44 @@
+ADAPTER baseline-default-rayon-184-df4f-run2 AdapterInfo { name: "Apple M3 Ultra", vendor: 0, device: 0, device_type: IntegratedGpu, device_pci_bus_id: "", driver: "", driver_info: "", backend: Metal, subgroup_min_size: 4, subgroup_max_size: 64, transient_saves_memory: Some(true), limit_bucket: None }
+PIPELINES baseline-default-rayon-184-df4f-run2 rep=0 ms=16.173
+PIPELINES baseline-default-rayon-184-df4f-run2 rep=1 ms=14.841
+PIPELINES baseline-default-rayon-184-df4f-run2 rep=2 ms=14.403
+PATH baseline-default-rayon-184-df4f-run2 count=2 gpu=true reason=None
+RESIDENT baseline-default-rayon-184-df4f-run2 count=2 rep=0 warmup=true ms=30.103 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT baseline-default-rayon-184-df4f-run2 count=2 rep=1 warmup=false ms=7.531 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT baseline-default-rayon-184-df4f-run2 count=2 rep=2 warmup=false ms=7.292 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT baseline-default-rayon-184-df4f-run2 count=2 rep=3 warmup=false ms=7.333 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RENDER baseline-default-rayon-184-df4f-run2 count=2 rep=0 warmup=true ms=132.780 midpoint=[0.5, 0.5, 0.5, 1.0]
+RENDER baseline-default-rayon-184-df4f-run2 count=2 rep=1 warmup=false ms=131.859 midpoint=[0.5, 0.5, 0.5, 1.0]
+RENDER baseline-default-rayon-184-df4f-run2 count=2 rep=2 warmup=false ms=110.611 midpoint=[0.5, 0.5, 0.5, 1.0]
+RENDER baseline-default-rayon-184-df4f-run2 count=2 rep=3 warmup=false ms=112.376 midpoint=[0.5, 0.5, 0.5, 1.0]
+PARITY baseline-default-rayon-184-df4f-run2 count=2 pixels=24000000 max_diff_255=0.000030
+PATH baseline-default-rayon-184-df4f-run2 count=4 gpu=false reason=Some(Unsupported("coincident gradient stops (composited on the CPU)"))
+RESIDENT baseline-default-rayon-184-df4f-run2 count=4 rep=0 warmup=true ms=76.248 cpu_only=true
+RESIDENT baseline-default-rayon-184-df4f-run2 count=4 rep=1 warmup=false ms=74.508 cpu_only=true
+RESIDENT baseline-default-rayon-184-df4f-run2 count=4 rep=2 warmup=false ms=72.097 cpu_only=true
+RESIDENT baseline-default-rayon-184-df4f-run2 count=4 rep=3 warmup=false ms=74.019 cpu_only=true
+RENDER baseline-default-rayon-184-df4f-run2 count=4 rep=0 warmup=true ms=75.057 midpoint=[1.0, 1.0, 1.0, 1.0]
+RENDER baseline-default-rayon-184-df4f-run2 count=4 rep=1 warmup=false ms=74.419 midpoint=[1.0, 1.0, 1.0, 1.0]
+RENDER baseline-default-rayon-184-df4f-run2 count=4 rep=2 warmup=false ms=76.852 midpoint=[1.0, 1.0, 1.0, 1.0]
+RENDER baseline-default-rayon-184-df4f-run2 count=4 rep=3 warmup=false ms=74.540 midpoint=[1.0, 1.0, 1.0, 1.0]
+PARITY baseline-default-rayon-184-df4f-run2 count=4 pixels=24000000 max_diff_255=0.000000
+PATH baseline-default-rayon-184-df4f-run2 count=256 gpu=false reason=Some(Unsupported("coincident gradient stops (composited on the CPU)"))
+RESIDENT baseline-default-rayon-184-df4f-run2 count=256 rep=0 warmup=true ms=168.215 cpu_only=true
+RESIDENT baseline-default-rayon-184-df4f-run2 count=256 rep=1 warmup=false ms=165.446 cpu_only=true
+RESIDENT baseline-default-rayon-184-df4f-run2 count=256 rep=2 warmup=false ms=163.330 cpu_only=true
+RESIDENT baseline-default-rayon-184-df4f-run2 count=256 rep=3 warmup=false ms=162.528 cpu_only=true
+RENDER baseline-default-rayon-184-df4f-run2 count=256 rep=0 warmup=true ms=157.314 midpoint=[0.5000038, 0.5000038, 0.5000038, 0.7500019]
+RENDER baseline-default-rayon-184-df4f-run2 count=256 rep=1 warmup=false ms=167.010 midpoint=[0.5000038, 0.5000038, 0.5000038, 0.7500019]
+RENDER baseline-default-rayon-184-df4f-run2 count=256 rep=2 warmup=false ms=159.167 midpoint=[0.5000038, 0.5000038, 0.5000038, 0.7500019]
+RENDER baseline-default-rayon-184-df4f-run2 count=256 rep=3 warmup=false ms=157.702 midpoint=[0.5000038, 0.5000038, 0.5000038, 0.7500019]
+PARITY baseline-default-rayon-184-df4f-run2 count=256 pixels=24000000 max_diff_255=0.000000
+PATH baseline-default-rayon-184-df4f-run2 count=257 gpu=false reason=Some(Unsupported("coincident gradient stops (composited on the CPU)"))
+RESIDENT baseline-default-rayon-184-df4f-run2 count=257 rep=0 warmup=true ms=160.093 cpu_only=true
+RESIDENT baseline-default-rayon-184-df4f-run2 count=257 rep=1 warmup=false ms=153.868 cpu_only=true
+RESIDENT baseline-default-rayon-184-df4f-run2 count=257 rep=2 warmup=false ms=157.453 cpu_only=true
+RESIDENT baseline-default-rayon-184-df4f-run2 count=257 rep=3 warmup=false ms=157.727 cpu_only=true
+RENDER baseline-default-rayon-184-df4f-run2 count=257 rep=0 warmup=true ms=155.176 midpoint=[0.0, 0.0, 0.0, 0.5]
+RENDER baseline-default-rayon-184-df4f-run2 count=257 rep=1 warmup=false ms=153.943 midpoint=[0.0, 0.0, 0.0, 0.5]
+RENDER baseline-default-rayon-184-df4f-run2 count=257 rep=2 warmup=false ms=158.479 midpoint=[0.0, 0.0, 0.0, 0.5]
+RENDER baseline-default-rayon-184-df4f-run2 count=257 rep=3 warmup=false ms=155.265 midpoint=[0.0, 0.0, 0.0, 0.5]
+PARITY baseline-default-rayon-184-df4f-run2 count=257 pixels=24000000 max_diff_255=0.000000

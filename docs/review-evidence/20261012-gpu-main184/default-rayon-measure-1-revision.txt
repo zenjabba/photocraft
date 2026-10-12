@@ -1,0 +1,44 @@
+ADAPTER revision-default-rayon-184-df4f-run1 AdapterInfo { name: "Apple M3 Ultra", vendor: 0, device: 0, device_type: IntegratedGpu, device_pci_bus_id: "", driver: "", driver_info: "", backend: Metal, subgroup_min_size: 4, subgroup_max_size: 64, transient_saves_memory: Some(true), limit_bucket: None }
+PIPELINES revision-default-rayon-184-df4f-run1 rep=0 ms=19.911
+PIPELINES revision-default-rayon-184-df4f-run1 rep=1 ms=17.487
+PIPELINES revision-default-rayon-184-df4f-run1 rep=2 ms=17.091
+PATH revision-default-rayon-184-df4f-run1 count=2 gpu=true reason=None
+RESIDENT revision-default-rayon-184-df4f-run1 count=2 rep=0 warmup=true ms=29.582 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT revision-default-rayon-184-df4f-run1 count=2 rep=1 warmup=false ms=5.720 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT revision-default-rayon-184-df4f-run1 count=2 rep=2 warmup=false ms=5.761 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT revision-default-rayon-184-df4f-run1 count=2 rep=3 warmup=false ms=5.383 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RENDER revision-default-rayon-184-df4f-run1 count=2 rep=0 warmup=true ms=137.572 midpoint=[0.5, 0.5, 0.5, 1.0]
+RENDER revision-default-rayon-184-df4f-run1 count=2 rep=1 warmup=false ms=136.132 midpoint=[0.5, 0.5, 0.5, 1.0]
+RENDER revision-default-rayon-184-df4f-run1 count=2 rep=2 warmup=false ms=115.231 midpoint=[0.5, 0.5, 0.5, 1.0]
+RENDER revision-default-rayon-184-df4f-run1 count=2 rep=3 warmup=false ms=114.868 midpoint=[0.5, 0.5, 0.5, 1.0]
+PARITY revision-default-rayon-184-df4f-run1 count=2 pixels=24000000 max_diff_255=0.000030
+PATH revision-default-rayon-184-df4f-run1 count=4 gpu=true reason=None
+RESIDENT revision-default-rayon-184-df4f-run1 count=4 rep=0 warmup=true ms=6.144 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT revision-default-rayon-184-df4f-run1 count=4 rep=1 warmup=false ms=5.519 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT revision-default-rayon-184-df4f-run1 count=4 rep=2 warmup=false ms=5.397 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT revision-default-rayon-184-df4f-run1 count=4 rep=3 warmup=false ms=5.719 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RENDER revision-default-rayon-184-df4f-run1 count=4 rep=0 warmup=true ms=109.292 midpoint=[1.0, 1.0, 1.0, 1.0]
+RENDER revision-default-rayon-184-df4f-run1 count=4 rep=1 warmup=false ms=114.262 midpoint=[1.0, 1.0, 1.0, 1.0]
+RENDER revision-default-rayon-184-df4f-run1 count=4 rep=2 warmup=false ms=116.477 midpoint=[1.0, 1.0, 1.0, 1.0]
+RENDER revision-default-rayon-184-df4f-run1 count=4 rep=3 warmup=false ms=110.843 midpoint=[1.0, 1.0, 1.0, 1.0]
+PARITY revision-default-rayon-184-df4f-run1 count=4 pixels=24000000 max_diff_255=0.000000
+PATH revision-default-rayon-184-df4f-run1 count=256 gpu=true reason=None
+RESIDENT revision-default-rayon-184-df4f-run1 count=256 rep=0 warmup=true ms=32.382 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT revision-default-rayon-184-df4f-run1 count=256 rep=1 warmup=false ms=27.569 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT revision-default-rayon-184-df4f-run1 count=256 rep=2 warmup=false ms=23.417 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RESIDENT revision-default-rayon-184-df4f-run1 count=256 rep=3 warmup=false ms=23.314 stats=Stats { passes: 3, chunks: 24, slots: 3, tiles_uploaded: 0, bytes_uploaded: 0, tiles_shared: 0, fx_shapes: 0, fx_programs: 0, fx_pixels: 0, cells: 6, evicted: 0, flushes: 0, prefix_hits: 0, prefix_passes_skipped: 0 }
+RENDER revision-default-rayon-184-df4f-run1 count=256 rep=0 warmup=true ms=122.300 midpoint=[0.5000038, 0.5000038, 0.5000038, 0.7500019]
+RENDER revision-default-rayon-184-df4f-run1 count=256 rep=1 warmup=false ms=138.330 midpoint=[0.5000038, 0.5000038, 0.5000038, 0.7500019]
+RENDER revision-default-rayon-184-df4f-run1 count=256 rep=2 warmup=false ms=139.644 midpoint=[0.5000038, 0.5000038, 0.5000038, 0.7500019]
+RENDER revision-default-rayon-184-df4f-run1 count=256 rep=3 warmup=false ms=123.820 midpoint=[0.5000038, 0.5000038, 0.5000038, 0.7500019]
+PARITY revision-default-rayon-184-df4f-run1 count=256 pixels=24000000 max_diff_255=0.000046
+PATH revision-default-rayon-184-df4f-run1 count=257 gpu=false reason=Some(Unsupported("gradient exceeds 256 exact stops (composited on the CPU)"))
+RESIDENT revision-default-rayon-184-df4f-run1 count=257 rep=0 warmup=true ms=159.858 cpu_only=true
+RESIDENT revision-default-rayon-184-df4f-run1 count=257 rep=1 warmup=false ms=160.588 cpu_only=true
+RESIDENT revision-default-rayon-184-df4f-run1 count=257 rep=2 warmup=false ms=156.584 cpu_only=true
+RESIDENT revision-default-rayon-184-df4f-run1 count=257 rep=3 warmup=false ms=156.600 cpu_only=true
+RENDER revision-default-rayon-184-df4f-run1 count=257 rep=0 warmup=true ms=158.224 midpoint=[0.0, 0.0, 0.0, 0.5]
+RENDER revision-default-rayon-184-df4f-run1 count=257 rep=1 warmup=false ms=161.591 midpoint=[0.0, 0.0, 0.0, 0.5]
+RENDER revision-default-rayon-184-df4f-run1 count=257 rep=2 warmup=false ms=159.268 midpoint=[0.0, 0.0, 0.0, 0.5]
+RENDER revision-default-rayon-184-df4f-run1 count=257 rep=3 warmup=false ms=161.693 midpoint=[0.0, 0.0, 0.0, 0.5]
+PARITY revision-default-rayon-184-df4f-run1 count=257 pixels=24000000 max_diff_255=0.000000

@@ -1,0 +1,11 @@
+# GPU hard-stop hardware measurement, 2026-10-12
+
+Code revision: `83bb9a888c8d24ca63028226a9e5488bef46c2c8`, source tree `df4f0cbdbadec95835e936aa74db41fa143288bd`; baseline commit `184c226a76c9ca6234d473912d438feaa48c1cb0`, tree `427b3adff34bc4cf8e5adb190efe3a75c9bfbab3`. Both mirrors contain all 1,658 verified source files plus this unchanged, separately hashed harness. The code PR includes no benchmark or evidence assets.
+
+Apple M3 Ultra / Metal, macOS 26.5.1, Rust 1.99, host reports 32 logical CPUs. Release optimization 3, LTO off, codegen units 16. Each profile runs baseline/revision/baseline/revision, one warm-up plus three measured samples in each run. All four 24 MP controls compare every output pixel with the CPU oracle. Composite prefix caching is disabled; GPU completion is awaited.
+
+`default-rayon-summary.json` and its four raw logs use `RAYON_NUM_THREADS` unset; actual pool size is uninstrumented. `rayon2-summary.json` and its four logs use two workers. The default-Rayon sequence reuses the binaries built for the two-worker sequence and removes only the worker environment setting; no rebuild or measurement retry. Results are kept separate. GPU resident timing omits CPU readback; CPU fallback resident timing omits its later GPU upload. Full readback returns all pixels. Driver caches were warm and shared services active. Four-stop full readback is slower in the revision under the default setting despite its resident improvement. These measurements establish the stated cases, not universal speedup or hardware budget compliance.
+
+The unchanged harness SHA-256 is `ec1e381fbda4b283d003000b602c371961308a4686404361d8dda4c5d06a4e02`. Install it as `crates/gpu/examples/gpu2053_benchmark.rs` in separate baseline/revision mirrors, then build identically with `cargo build --locked --offline --release -p photocraft-gpu --example gpu2053_benchmark`. Run each binary directly with the two stated worker environments. JSON summaries preserve all six samples, medians and ranges; raw logs retain Metal adapter, pipeline creation, backend controls and pixel parity output.
+
+Harness, synthetic benchmark content and documentation: MIT OR Apache-2.0; adjacent license texts apply. No private user assets or credentials are included.

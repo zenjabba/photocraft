@@ -1,0 +1,250 @@
+{
+  "source_trees": {
+    "baseline": "427b3adff34bc4cf8e5adb190efe3a75c9bfbab3",
+    "revision": "df4f0cbdbadec95835e936aa74db41fa143288bd"
+  },
+  "harness_sha256": "ec1e381fbda4b283d003000b602c371961308a4686404361d8dda4c5d06a4e02",
+  "sequence": [
+    "baseline",
+    "revision",
+    "baseline",
+    "revision"
+  ],
+  "samples": {
+    "baseline": {
+      "2": {
+        "RESIDENT": {
+          "samples_ms": [
+            5.964,
+            5.25,
+            6.893,
+            6.261,
+            5.767,
+            5.923
+          ],
+          "median_ms": 5.9435,
+          "min_ms": 5.25,
+          "max_ms": 6.893
+        },
+        "RENDER": {
+          "samples_ms": [
+            138.176,
+            110.517,
+            115.615,
+            137.404,
+            118.251,
+            122.745
+          ],
+          "median_ms": 120.498,
+          "min_ms": 110.517,
+          "max_ms": 138.176
+        }
+      },
+      "4": {
+        "RESIDENT": {
+          "samples_ms": [
+            151.215,
+            148.279,
+            149.414,
+            159.546,
+            155.965,
+            156.914
+          ],
+          "median_ms": 153.59,
+          "min_ms": 148.279,
+          "max_ms": 159.546
+        },
+        "RENDER": {
+          "samples_ms": [
+            148.884,
+            164.482,
+            151.21,
+            151.059,
+            158.145,
+            149.613
+          ],
+          "median_ms": 151.1345,
+          "min_ms": 148.884,
+          "max_ms": 164.482
+        }
+      },
+      "256": {
+        "RESIDENT": {
+          "samples_ms": [
+            1296.116,
+            1299.31,
+            1296.537,
+            1298.708,
+            1305.811,
+            1307.484
+          ],
+          "median_ms": 1299.009,
+          "min_ms": 1296.116,
+          "max_ms": 1307.484
+        },
+        "RENDER": {
+          "samples_ms": [
+            1300.836,
+            1297.192,
+            1308.467,
+            1279.439,
+            1302.568,
+            1309.684
+          ],
+          "median_ms": 1301.702,
+          "min_ms": 1279.439,
+          "max_ms": 1309.684
+        }
+      },
+      "257": {
+        "RESIDENT": {
+          "samples_ms": [
+            1296.437,
+            1309.87,
+            1319.41,
+            1302.911,
+            1313.638,
+            1311.958
+          ],
+          "median_ms": 1310.914,
+          "min_ms": 1296.437,
+          "max_ms": 1319.41
+        },
+        "RENDER": {
+          "samples_ms": [
+            1296.671,
+            1290.746,
+            1297.856,
+            1310.171,
+            1308.891,
+            1322.392
+          ],
+          "median_ms": 1303.3735000000001,
+          "min_ms": 1290.746,
+          "max_ms": 1322.392
+        }
+      }
+    },
+    "revision": {
+      "2": {
+        "RESIDENT": {
+          "samples_ms": [
+            5.94,
+            5.457,
+            6.055,
+            8.739,
+            7.664,
+            7.423
+          ],
+          "median_ms": 6.739,
+          "min_ms": 5.457,
+          "max_ms": 8.739
+        },
+        "RENDER": {
+          "samples_ms": [
+            139.726,
+            120.546,
+            115.139,
+            144.047,
+            121.663,
+            120.085
+          ],
+          "median_ms": 121.1045,
+          "min_ms": 115.139,
+          "max_ms": 144.047
+        }
+      },
+      "4": {
+        "RESIDENT": {
+          "samples_ms": [
+            6.122,
+            6.14,
+            5.976,
+            9.612,
+            15.461,
+            11.712
+          ],
+          "median_ms": 7.8759999999999994,
+          "min_ms": 5.976,
+          "max_ms": 15.461
+        },
+        "RENDER": {
+          "samples_ms": [
+            118.543,
+            118.467,
+            116.452,
+            121.295,
+            119.061,
+            120.219
+          ],
+          "median_ms": 118.802,
+          "min_ms": 116.452,
+          "max_ms": 121.295
+        }
+      },
+      "256": {
+        "RESIDENT": {
+          "samples_ms": [
+            37.21,
+            26.209,
+            24.099,
+            23.619,
+            23.662,
+            24.188
+          ],
+          "median_ms": 24.1435,
+          "min_ms": 23.619,
+          "max_ms": 37.21
+        },
+        "RENDER": {
+          "samples_ms": [
+            146.092,
+            144.491,
+            132.777,
+            132.895,
+            145.24,
+            145.967
+          ],
+          "median_ms": 144.8655,
+          "min_ms": 132.777,
+          "max_ms": 146.092
+        }
+      },
+      "257": {
+        "RESIDENT": {
+          "samples_ms": [
+            1295.843,
+            1278.233,
+            1309.109,
+            1302.338,
+            1302.261,
+            1305.887
+          ],
+          "median_ms": 1302.2995,
+          "min_ms": 1278.233,
+          "max_ms": 1309.109
+        },
+        "RENDER": {
+          "samples_ms": [
+            1299.833,
+            1298.096,
+            1305.001,
+            1340.322,
+            1302.266,
+            1304.656
+          ],
+          "median_ms": 1303.461,
+          "min_ms": 1298.096,
+          "max_ms": 1340.322
+        }
+      }
+    }
+  },
+  "pipeline_creation_and_adapter_lines_preserved_in_raw_logs": true,
+  "warmups_retained_but_excluded_from_summary": true,
+  "qualifications": [
+    "Actual Apple M3 Ultra/Metal, shared services active, driver cache warm; timings include host work and waiting.",
+    "Resident and readback paths reported separately; no universal speedup/budget claim.",
+    "Historical17dda/M4Pro timings remain historical, not relabeled."
+  ]
+}
